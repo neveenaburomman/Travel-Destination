@@ -15,7 +15,7 @@ import Tour from './tour/Tour';
          return (
                     
             <Link to = {`/city/${each.id}`}> 
-            <Tour key={each.id} data={each}/>
+            <Tour key={each.id} citydata={each}/>
 
 
              </Link>
