@@ -1,7 +1,10 @@
 #tour  img{
-	width: 60%;
+	width: 50%;
 	border: 5px solid;
  align-items: center;
+ justify-items: center;
+ padding: 50px;
+margin: 50px;
 }
 #tour {
 
@@ -10,4 +13,10 @@
 	justify-content: center;
 	align-items: center;
    
+   }
+
+   #text
+   {
+	   color: rgb(163, 55, 55);
+	   text-align: center;
    }

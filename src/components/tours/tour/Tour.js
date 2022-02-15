@@ -7,8 +7,9 @@ export default function Tour(props){
     <div id="tour">
     
                 
-                <h4>{props.each.name}</h4>
-                <img src={props.each.image} alt="theimage"/>
+                <h3 id ="text" >{props.citydata.name}</h3>
+                <br></br>
+                <img src={props.citydata.image} alt="theimage"/>
                 <hr></hr>
 
                 
