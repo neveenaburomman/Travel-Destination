@@ -1,23 +1,28 @@
 
 import "./Tours.css";
+import { Link } from 'react-router-dom';
+import Tour from './tour/Tour';
 
  export default function Tours (props){
     
 
     return(
         <>
-        
+        <div className="card">
+
             {props.theData.map((each) => {
 
          return (
-                    <div className="card">
-                    <h4>{each.name}</h4>
-                    <img src={each.image} alt="the image"/>
+                    
+            <Link to = {`/city/${each.id}`}> 
+            <Tour key={each.id} data={each}/>
 
-                    </div>
+
+             </Link>
+                    
                 );
             })}
-        
+        </div>
        </> 
     );
 }
